@@ -1,0 +1,120 @@
+header h1 {
+	animation-name: moveInLeft;
+	animation-duration: 2s;
+	animation-delay: .75s;
+}
+
+#header .text-faded {
+	animation: moveInRight 1s ease-out .75s;
+}
+
+@keyframes moveInLeft {
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	80%{
+		transform: translateX(10px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+
+	80% {
+		transform: translateX(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+.btn:link,
+.btn:visited {
+	transition: all .2s;
+	position: relative;
+}
+
+.btn:hover {
+	transform: translateY(-3x);
+	box-shadow: 0px 6px 20px rgba(0,0,0,.5);
+}
+
+.btn:active {
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px (0,0,0,.5);
+}
+
+.btn-animated {
+	animation: moveInBottom 2s ease-out .75s; 
+}
+
+.about-photo {
+	border-radius: 50%;
+}
+
+#footer {
+	color: white;
+	padding: 30px;
+}
+
+#footer .fab {
+	color: black !important;
+}
+
+#footer h5 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#footer-sub {
+	color: white;
+	padding: 5px;
+	font-size: .8rem;
+	text-align: center;
+	vertical-align: middle;
+	
+}
+
+
+/***********************************************************************************************/
+/* Go-Top Button */
+/***********************************************************************************************/
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	/* font-size: 1em; */
+	padding: .2em;
+	display: none;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
